@@ -1,0 +1,55 @@
+/* Homepage Styles */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+/*Overlay that will show after hovering over container */
+  .overlay { 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 8px;
+  }
+/* This will trigger overlay after overing over container*/
+  .container:hover .overlay {
+    opacity: 1;
+  }
+/* Text over overlay*/
+  .projectedText {
+    color: rgba(255,255,255, 0.8);
+    font-size: 48px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* SearchBar Styles */
+.searchBar{
+  height: 36px;
+  width: fit-content;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 8px;
+  outline: none;
+  border: 1px solid #80807D;
+  border-radius: 8px;
+}
+
+.searchBar:focus {
+  border: 2px solid #80807D;
+}
