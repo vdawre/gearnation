@@ -26,6 +26,7 @@ const AppProvider = ({children}) => {
     const [selectedHomeCategory, setSelectedHomeCategory] = useState("");
     const[cartData, setCartData] = useState([]);
     const[wishlistData, setWishlistData] = useState([]);
+    const[addresses, setAddresses] = useState([]);
 
     const reducerFunction = (state, {type, payload}) => {
         switch(type) {
@@ -103,7 +104,7 @@ const AppProvider = ({children}) => {
         getProducts()
     }, []);
 
-return <AppContext.Provider value={{state, dispatch, db, setDb, users, setUsers, getCategories, getProducts, selectedHomeCategory, setSelectedHomeCategory, cartData, setCartData, wishlistData, setWishlistData}}>{children}</AppContext.Provider>
+return <AppContext.Provider value={{state, dispatch, db, setDb, users, setUsers, getCategories, getProducts, selectedHomeCategory, setSelectedHomeCategory, cartData, setCartData, wishlistData, setWishlistData, addresses, setAddresses}}>{children}</AppContext.Provider>
 }
 export const useGlobalContext = () => {
     return useContext(AppContext)

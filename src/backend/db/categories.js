@@ -10,7 +10,7 @@ export const categories = [
     _id: uuid(),
     categoryName: "t-shirts",
     description:
-      "t-shirts",
+      "tshirts",
   },
   {
     _id: uuid(),

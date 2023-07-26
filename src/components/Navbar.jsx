@@ -33,7 +33,7 @@ const Navbar = () => {
                 </IconButton>
             </Box >
             <IconButton size='medium' color='inherit'>
-                    <Avatar src={ isLoggedIn === true ? foundUser.profile : ""} alt='profile picture' sx={{ bgcolor:'gray'}} onClick={() => navigate("/profile")} />
+                    <Avatar src={ isLoggedIn === true ? foundUser.image : ""} alt='profile picture' sx={{ bgcolor:'gray'}} onClick={() => navigate("/profile")} />
             </IconButton>
         </Stack>
     </Box>

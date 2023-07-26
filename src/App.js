@@ -31,7 +31,7 @@ function App() {
         <Route path="/wishlist" element={<Auth><Wishlist /></Auth>} />
         <Route path="/profile" element={<Auth><Profile /></Auth>} />
         <Route path="/checkout" element={<Auth><Checkout /></Auth>} />
-        <Route path="/order-summary" element={<Auth><OrderSummary /></Auth>} />
+        <Route path="/order_summary" element={<OrderSummary />} />
       </Routes>
     </ThemeProvider>
   );
